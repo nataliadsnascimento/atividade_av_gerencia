@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inserir Cometa</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="../index.html">
+                Objetos Astronômicos
+            </a>
+
+        </div>
+
+    </nav>
+
+    <main class="container mt-5">
+
+        <h1>Inserir Cometa</h1>
+
+        <form>
+
+            <div class="mb-3">
+
+                <label for="nome" class="form-label">
+                    Nome
+                </label>
+
+                <input type="text" class="form-control" id="nome">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="periodo" class="form-label">
+                    Período orbital
+                </label>
+
+                <input type="number" class="form-control" id="periodo">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="velocidade" class="form-label">
+                    Velocidade
+                </label>
+
+                <input type="number" step="0.01" class="form-control" id="velocidade">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="cauda" class="form-label">
+                    Possui cauda?
+                </label>
+
+                <select class="form-select" id="cauda">
+
+                    <option selected>Selecione uma opção</option>
+                    <option>Sim</option>
+                    <option>Não</option>
+
+                </select>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Inserir Cometa
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
