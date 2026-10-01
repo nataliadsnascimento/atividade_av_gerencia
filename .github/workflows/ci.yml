@@ -1,0 +1,25 @@
+name: GitHub Actions
+
+on:
+  push:
+    branches:
+      - main
+      - developer
+  pull_request:
+    branches:
+      - main
+      - developer
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar projeto
+        uses: actions/checkout@v4
+
+      - name: Verificar arquivos HTML
+        run: |
+          echo "Projeto baixado com sucesso!"
+          echo "Arquivos HTML encontrados:"
+          find . -name "*.html"
